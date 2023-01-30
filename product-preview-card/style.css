@@ -41,7 +41,7 @@ html, body {
   5. Improve text rendering
 */
 body {
-  line-height: 1.5;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -65,4 +65,55 @@ input, button, textarea, select {
 */
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+}
+
+/* general styling */
+body {
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-regular);
+  font-size: 0.875rem;
+  color: var(--clr-neutral-400);
+  background-color: var(--clr-secondary);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.75rem 1rem;
+}
+
+/* product styles */
+.product {
+  --content-padding: 1.5rem;
+  --content-spacing: 1rem;
+  background-color: var(--clr-neutral-100);
+  border-radius: .625rem;
+  overflow: hidden;
+}
+
+.product__body {
+  padding: var(--content-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--content-spacing);
+}
+
+.product__category {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 5px;
+}
+
+.product__title {
+  font-family: var(--font-family-fancy);
+  font-weight: var(--font-weight-bold);
+  font-size: 2rem;
+  color: var(--clr-neutral-900);
+  line-height: 1;
+}
+
+.price {
+  display: flex;
+  gap: 1.1875rem;
+  flex-wrap: wrap;
 }
