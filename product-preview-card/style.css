@@ -131,6 +131,7 @@ body {
   background-color: var(--clr-neutral-100);
   border-radius: .625rem;
   overflow: hidden;
+  max-width: 600px;
 }
 
 .product__body {
@@ -138,6 +139,21 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--content-spacing);
+}
+
+@media (min-width: 600px) {
+  .product {
+    --content-padding: 2rem;
+    display: flex;
+  }
+
+  .product__img {
+    width: 50%;
+  }
+
+  .product__body {
+    width: 50%;
+  }
 }
 
 .product__category {
@@ -167,9 +183,3 @@ body {
   font-size: 2rem;
   color: var(--clr-primary);
 }
-
-
-/* <div class="price">
-<p class="product__new-price">$149.99</p>
-<p class="product__original-price">$169.99</p>
-</div> */
