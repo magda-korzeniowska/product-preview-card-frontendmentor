@@ -183,3 +183,18 @@ body {
   font-size: 2rem;
   color: var(--clr-primary);
 }
+
+.attribution {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.attribution a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--clr-primary-dark)
+}
